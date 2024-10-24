@@ -4,7 +4,7 @@ import face_recognition
 import os
 from datetime import datetime
 
-path = "D:\\abhi\study\MACHINE LEARNING\PYTHON ML PROJECTS\ImgRecordFD"
+path = "your file path"
 images = []
 classNames = []
 myList = os.listdir(path)
