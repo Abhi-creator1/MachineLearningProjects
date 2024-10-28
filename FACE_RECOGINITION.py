@@ -11,7 +11,7 @@ myList = os.listdir(path)
 #print(myList)
 
 for cls in myList:
-    currentImg = cv2.imread(f'{path}/{cls}')
+    currentImg = cv2.imread(f'{PATH}/{cls}') #Replace PATH with location of IMG folder
     images.append(currentImg)
     classNames.append(os.path.splitext(cls)[0])
 #print(classNames)
@@ -25,7 +25,7 @@ def FindEncodings(images):
     return encodeList
 
 def DetectedList(name):
-    with open("D:\\abhi\study\MACHINE LEARNING\PYTHON ML PROJECTS\Detected.csv",'r+') as f:
+    with open("PATH\Detected.csv",'r+') as f: #ADD location for csv file to be saved
         DataList = f.readline()
         nameList = []
         for line in DataList:
